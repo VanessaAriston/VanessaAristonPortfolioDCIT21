@@ -1,0 +1,706 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f5e2e1;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+}
+
+/* Logo */
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d44782;
+    flex-shrink: 1;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    color: #d44782;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Shine GIF */
+header .shine-gif {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 170px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 2rem 1rem;
+    background-color: #fbd3da;
+    text-align: center;
+    position: relative;
+    border: 6px dotted #f3758f;
+    box-sizing: border-box; /* Ensure padding is part of the width */
+}
+
+/* Content inside About Me */
+.about-me .cinnamoroll-gif {
+    width: 180px;
+    margin-bottom: 1rem;
+}
+
+.about-me h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #f3758f; /* Color of the underline */
+    text-decoration-thickness: 3px; /* Thickness of the underline */
+    text-decoration-style: wavy; /* Make it solid for a clean look */
+    text-underline-offset: 4px; /* Offset to move the underline below the text */
+  
+
+}
+
+.about-me p {
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.about-me .about-buttons {
+    margin-top: 1rem;
+}
+
+.about-me button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff91a3;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.about-me button:hover {
+    background-color: #fbc4d3;
+    transform: scale(1.05);
+}
+
+.about-me .decoration {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: auto;
+}
+
+.about-me .decoration.left {
+    left: 10px;
+    transform: scaleX(-1);
+}
+
+.about-me .decoration.right {
+    right: 10px;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    
+    .about-me {
+        padding: 2rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0; /* Remove margin to prevent overflow */
+    }
+
+    .about-me .cinnamoroll-gif {
+        width: 150px; /* Adjust the size for mobile */
+        margin-bottom: 1rem;
+    }
+
+    .about-me h2 {
+        font-size: 1.6rem; /* Adjust heading size for smaller screens */
+    }
+
+    .about-me p {
+        font-size: 1rem; /* Smaller text for mobile */
+        line-height: 40px;
+    }
+
+    .about-me .about-buttons {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column; /* Stack the buttons */
+        align-items: center; /* Center buttons horizontally */
+        width: 100%; /* Ensure buttons fill the screen width */
+    }
+
+    .about-me button {
+        width: 80%; /* Adjust button width for mobile */
+        font-size: 1rem;
+        margin: 0.5rem 0; /* Adjust button spacing */
+        padding: 1rem 0; /* Ensure proper padding for mobile */
+       font-family: 'Press Start 2P', cursive;
+    }
+
+    .about-me .decoration {
+        width: 50px; /* Smaller decoration for mobile */
+        bottom: 0;
+    }
+
+    .about-me .decoration.left {
+        left: 5px; /* Adjust left position */
+        transform: scaleX(-1);
+        }
+
+    .about-me .decoration.right {
+        right: 5px; /* Adjust right position */
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f5e2e1;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+}
+
+/* Logo */
+header .logo {
+    display:block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d44782;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    color: #d44782;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Shine GIF */
+header .shine-gif {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 170px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Keep everything in a row for desktop */
+    text-align: left;
+    padding: 5rem 2rem;
+    width: 100vw;
+    min-height: 450px;
+    position: relative;
+    background: url('https://i.imgur.com/0QsfmBE.jpeg') no-repeat center center;
+    background-size: cover; /* Make the background cover the entire area */
+}
+.hero p {
+   line-height:1.5rem;
+   margin-right:150px;
+}
+.hero h1 {
+    font-size: 2rem;
+    color: #d44782;
+    margin-bottom: 1rem;
+    line-height: 40px;
+  }
+
+/* Profile Image */
+.hero img {
+    width: 300px; /* Bigger profile image */
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #fc667f; /* Thin border */
+    padding: 5px;
+    background-color: rgb(255, 214, 234);
+    margin-right: 2rem; /* Space between image and text */
+}
+
+/* Hero Content */
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: center;
+    margin-left: 2rem; /* Space on the left */
+}
+
+/* Buttons */
+.hero .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero .buttons a {
+    padding: 1rem 2rem;
+    background-color: #ff91a3;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero .buttons a:hover {
+    background-color: #fbc4d3;
+    transform: scale(1.05);
+}
+
+/* Cat Heart */
+.hero .cat-heart {
+    width: 80px; /* Smaller cat-heart */
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+      border: 4px solid rgb(255, 117, 140); /* Inner pink border */
+  outline: 6px solid white; /* Outer white border */
+  border-radius: 10px; /* Optional: Rounded corners */
+  padding: 5px; /* Adds space inside the outline */
+  background-color: white; /* Ensure the box has a white background */
+}
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+
+    header {
+        position: relative; /* Ensure it's positioned relative */
+        display: flex;
+    }
+
+header .logo {
+    font-size:15px;
+}
+header .shine-gif {
+    width: 50px; /* Smaller size for mobile */
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 115px; /* Adjust based on logo size */
+    transform: translateY(-50%);
+}
+    .hero {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+        padding: 3rem 0; /* Remove side padding for full width */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Ensure everything is centered horizontally */
+        width: 100%; /* Full width */
+        min-height: 450px; /* Ensure it fits well on mobile */
+        background-size: cover; /* Ensure background covers the full section */
+        margin: 0; /* Remove any default margins */
+    }
+
+    .hero img {
+        width: 250px; /* Adjust image size for mobile */
+        height: 250px;
+        border-radius: 50%; /* Keep the rounded border */
+        margin-bottom: 1rem; /* Add space below image */
+        margin-left: auto; /* Ensure image is centered */
+        margin-right: auto; /* Ensure image is centered */
+    }
+
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column; /* Ensure content stacks vertically */
+        align-items: center; /* Center the content */
+        justify-content: center;
+        text-align: center; /* Center the text */
+        margin-bottom: 2rem; /* Add margin below the text content */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+        margin-bottom: 1rem; /* Space between heading and content */
+        margin-left: auto; /* Center heading */
+        margin-right: auto; /* Center heading */
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Adjust paragraph size for mobile */
+        margin-bottom: 1.4rem; /* Space below paragraph */
+        margin-left: auto; /* Center paragraph */
+        margin-right: auto; /* Center paragraph */
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .hero .buttons {
+        display: flex; /* Flexbox for the buttons */
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Add space between buttons */
+        align-items: center; /* Center buttons horizontally */
+        width: 100%; /* Ensure buttons fill the container width */
+    }
+
+    .hero .buttons a {
+        width: 80%; /* Limit button width to 80% of the parent container */
+        font-size: 1.2rem;
+        padding: 1rem 0; /* Adjust vertical padding for a better look */
+        text-align: center; /* Ensure text is centered within buttons */
+    }
+
+    .hero .cat-heart {
+        width: 30px; /* Adjust heart size for mobile */
+        position: absolute;
+        bottom: -10px; /* Adjust the bottom position */
+        left: 40%; /* Center the heart horizontally */
+        transform: translateX(-50%); /* Ensure it's perfectly centered */
+    }
+}
+.projects { 
+    position: relative;
+    padding: 2rem;
+    padding-top: 20px;
+}
+
+.projects .bottom-center-gif {
+    position: absolute;
+    bottom: 10px; /* Position the GIF 10px from the bottom */
+    left: 50%; /* Position it in the center horizontally */
+    transform: translateX(-50%); /* Adjust the position to truly center it */
+    width: 200px; /* Set the size of the GIF */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 100; /* Ensure it stays above other content */
+}
+
+.projects h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-right: 30px;
+    display: flex; /* Use flex to align items in a row */
+    align-items: center; /* Vertically align the heading and heart image */
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.projects .project {
+    background-color: #ffa7be;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    position: relative; /* Ensure the ribbon is positioned relative to each project */
+    cursor: pointer;
+    height: 380px;
+    margin-bottom: 50px;
+    border: 6px double #d44782;
+}
+
+.projects .project::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust position above the project */
+    left: 0; /* Position the ribbon to the top left of the project */
+    width: 50px; /* Adjust the width based on your image size */
+    height: 50px; /* Adjust the height to fit the ribbon image */
+    background-image: url('https://i.imgur.com/Dg2ooHC.png'); /* Path to your custom image */
+    background-size: cover; /* Ensure the image covers the width */
+    background-repeat: no-repeat;
+}
+
+.projects .project::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust position above the project */
+    right: 0; /* Position the ribbon to the top right of the project */
+    width: 50px; /* Adjust the width based on your image size */
+    height: 50px; /* Adjust the height to fit the ribbon image */
+    background-image: url('https://i.imgur.com/Dg2ooHC.png'); /* Path to your custom image */
+    background-size: cover; /* Ensure the image covers the width */
+    background-repeat: no-repeat;
+}
+
+.projects p {
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.projects .project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.projects .project .project-images img {
+    display: none; /* Hide all images by default */
+}
+
+.projects .project .project-images img:first-child {
+    display: block; /* Show only the first image */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .projects h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-right: 20px;
+    }
+
+    .projects .project-grid {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+
+    .projects .project {
+        height: auto; /* Allow project height to be flexible on smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .projects .project img {
+        height: 150px; /* Reduce image height for mobile */
+    }
+
+    .projects .bottom-center-gif {
+        width: 150px; /* Adjust size of the GIF on mobile */
+    }
+}
+
+/* Very Small Screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+    .projects h2 {
+        font-size: 1.2rem; /* Smaller font size for very small screens */
+    }
+
+    .projects .project {
+        padding: 0.8rem; /* Slightly reduce padding */
+    }
+
+    .projects .project img {
+        height: 120px; /* Reduce image height even more for tiny screens */
+    }
+
+    .projects .bottom-center-gif {
+        width: 120px; /* Smaller GIF size for tiny screens */
+    }
+}
+
+  .heart-img {
+    width: 50px; /* Adjust the size of the heart image */
+    height: 50px;
+    margin-right: 10px; /* Add some space between the text and heart */
+  }
+  
+  .contact {
+    position: relative; /* Make the contact section a positioning container */
+    padding: 2rem;
+    background-color: #fbd3da;
+    text-align: center;
+  }
+  
+  .contact .bottom-right-gif,
+  .contact .bottom-left-gif {
+    position: absolute;
+    bottom: 10px; /* Adjust how far from the bottom */
+    width: 100px; /* Adjust the size of the GIF */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 100; /* Ensure it stays above other content */
+  }
+  
+  .contact .bottom-right-gif {
+    right: 10px; /* Position on the right side */
+  }
+  
+  .contact .bottom-left-gif {
+    left: 10px; /* Position on the left side */
+  }
+  
+  /* Mobile Specific Styles */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 1.5rem; /* Adjust padding for mobile */
+    }
+  
+    .contact h2 {
+      margin-bottom: 1rem;
+      font-size: 1.6rem; /* Adjust heading size for mobile */
+    }
+  
+    .contact .contact-button {
+      padding: 1rem 2rem;
+      font-size: 1rem; /* Adjust button font size for mobile */
+      width: 80%; /* Make button width 80% of the container */
+      margin: 0 auto; /* Center the button */
+    }
+  
+    .contact .bottom-right-gif,
+    .contact .bottom-left-gif {
+      width: 80px; /* Adjust the GIF size on mobile */
+      bottom: 10px; /* Ensure the GIF remains at the bottom */
+    }
+    footer p {
+        margin: 1rem 0;
+        font-size: 1rem; /* Adjust text size for mobile */
+        word-wrap: break-word; /* Break long words to avoid overflow */
+        overflow-wrap: break-word; /* Ensures long words break onto the next line */
+        line-height: 40px;
+  }
+  
+  }
+  
+  footer {
+    background-color: #f1a0b3;  /* Slightly darker pink for contrast */
+    padding: 2rem;
+    text-align: center;
+    color: #d44782;
+    font-family: 'Press Start 2P', cursive;
+    border-top: 4px solid #f3758f; /* A small decorative border */
+  }
+  
+    footer p {
+        margin: 1rem 0;
+        font-size: 1rem; /* Adjust text size for mobile */
+        word-wrap: break-word; /* Break long words to avoid overflow */
+        overflow-wrap: break-word; /* Ensures long words break onto the next line */
+        line-height: 40px;
+  }
+  
+  footer a {
+    color: #d44782;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 182, 193, 0.9); /* Light pink background */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    z-index: 1000;
+  }
+  
+  /* Image inside the modal */
+  .modal img {
+    max-width: 80%; /* Image width takes up 80% of the modal's width */
+    max-height: 80%; /* Image height takes up 80% of the modal's height */
+    object-fit: contain; /* Ensure the image fits within the modal without distortion */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+  }
+  
+  /* Modal close, next, and previous buttons */
+  .modal .close, .modal .next, .modal .prev {
+    position: absolute;
+    top: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  }
+  
+  .modal .close {
+    top: 5%;
+    right: 5%;
+  }
+  
+  .modal .next {
+    right: 5%;
+  }
+  
+  .modal .prev {
+    left: 5%;
+  }
+  
+  /* Mobile responsiveness for modal */
+  @media (max-width: 768px) {
+    .modal img {
+      max-width: 95%; /* Adjust the image width on mobile */
+      max-height: 70%; /* Adjust the image height on mobile */
+    }
+  
+    .modal .close, .modal .next, .modal .prev {
+      padding: 0.5rem;
+      font-size: 1.2rem; /* Smaller buttons on mobile */
+    }
+  }
+  
+  
